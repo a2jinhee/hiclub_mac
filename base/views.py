@@ -15,7 +15,19 @@ def homepage(request):
         'latest': latest,
         'categories': categories,
     }
-    return render(request, 'homepage.html', context)
+    return render(request, 'index.html', context)
+
+
+def about(request):
+    return render(request, 'about.html')
+
+
+def info(request):
+    return render(request, 'info.html')
+
+
+def notice(request):
+    return render(request, 'blog.html')
 
 
 def post(request, slug):
@@ -24,10 +36,6 @@ def post(request, slug):
         'post': post,
     }
     return render(request, 'post.html', context)
-
-
-def about(request):
-    return render(request, 'about_page.html')
 
 
 def category_post_list(request, slug):
@@ -61,9 +69,5 @@ def search(request):
     return render(request, 'search_bar.html', context)
 
 
-class HomePageView(TemplateView):
-    template_name = "homepage.html"
-
-
-# class AboutPageView(TemplateView):
-#     template_name = "about.html"
+def contact(request):
+    return render(request, 'contact.html')

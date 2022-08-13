@@ -1,5 +1,4 @@
 {% load static %} {% block content %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,16 +30,16 @@
     <section class="header">
       <nav>
         <a href="index.html"
-          ><img src="img/logo.jpg" width="=100" height="50" alt=""
+          ><img src="{%static 'img/logo.jpg'%}" width="=100" height="50" alt=""
         /></a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="info.html">INFO</a></li>
-            <li><a href="blog.html">NOTICE</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="{% url 'homepage' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'info' %}">INFO</a></li>
+            <li><a href="{% url 'notice' %}">NOTICE</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -101,19 +100,19 @@
       </p>
       <div class="row">
         <div class="notice-col">
-          <img src="img/campus_tour.jpg" alt="" />
+          <img src="{% static 'img/campus_tour.jpg'%}" alt="" />
           <div class="layer">
             <h3>Campus Tour</h3>
           </div>
         </div>
         <div class="notice-col">
-          <img src="img/hiday1.jpg" alt="" />
+          <img src="{%static 'img/hiday1.jpg'%}" alt="" />
           <div class="layer">
             <h3>HI-Day Tour</h3>
           </div>
         </div>
         <div class="notice-col">
-          <img src="img/hiking.jpg" alt="" />
+          <img src="{%static 'img/hiking.jpg'%}" alt="" />
           <div class="layer">
             <h3>Mission Hiking</h3>
           </div>
@@ -132,7 +131,7 @@
 
       <div class="row">
         <div class="facilities-col">
-          <img src="/img/international.jpg" alt="" />
+          <img src="{%static '/img/international.jpg'%}" alt="" />
           <h3>International Office</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
@@ -140,7 +139,7 @@
           </p>
         </div>
         <div class="facilities-col">
-          <img src="/img/business.jpg" alt="" />
+          <img src="{%static '/img/business.jpg'%}" alt="" />
           <h3>Business Building</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
@@ -148,7 +147,7 @@
           </p>
         </div>
         <div class="facilities-col">
-          <img src="/img/engineering.jpg" alt="" />
+          <img src="{%static '/img/engineering.jpg'%}" alt="" />
           <h3>Engineering Building</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
@@ -169,7 +168,7 @@
 
       <div class="row">
         <div class="testimonial-col">
-          <img src="/img/user(1).jpg" alt="" />
+          <img src="{%static '/img/user(1).jpg'%}" alt="" />
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum
@@ -185,7 +184,7 @@
           </div>
         </div>
         <div class="testimonial-col">
-          <img src="/img/user(2).jpg" alt="" />
+          <img src="{%static '/img/user(2).jpg'%}" alt="" />
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum
