@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import User, Post, Category, Author
 from django.db.models import Q
+from django.views.generic import TemplateView
 
 # Create your views here.
 
@@ -58,3 +59,11 @@ def search(request):
         'queryset': queryset
     }
     return render(request, 'search_bar.html', context)
+
+
+class HomePageView(TemplateView):
+    template_name = "homepage.html"
+
+
+# class AboutPageView(TemplateView):
+#     template_name = "about.html"

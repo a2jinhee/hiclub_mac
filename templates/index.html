@@ -1,0 +1,246 @@
+{% load static %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HI-Club Website Design</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="img/logo.jpg" width="=100" height="50" alt=""
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="info.html">INFO</a></li>
+            <li><a href="blog.html">NOTICE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>The Global Leader, SKKU</h1>
+        <p>
+          Wait for the moment,<br />
+          and the moment will find thee.
+        </p>
+        <a href="" class="hero-btn">Visit Us to Know More</a>
+      </div>
+    </section>
+
+    <!-- INFO -->
+
+    <section class="info">
+      <h1>HI-Club Events</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+        fugiat.
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Campus Tour</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quia
+            totam reprehenderit deserunt distinctio harum animi eveniet,
+            eligendi natus atque laborum consectetur odio facere quidem?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>HI-Day Tour</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quia
+            totam reprehenderit deserunt distinctio harum animi eveniet,
+            eligendi natus atque laborum consectetur odio facere quidem?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Mission Hiking</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quia
+            totam reprehenderit deserunt distinctio harum animi eveniet,
+            eligendi natus atque laborum consectetur odio facere quidem?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- notice -->
+
+    <section class="notice">
+      <h1>Notice from HI-Club</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, labore.
+      </p>
+      <div class="row">
+        <div class="notice-col">
+          <img src="img/campus_tour.jpg" alt="" />
+          <div class="layer">
+            <h3>Campus Tour</h3>
+          </div>
+        </div>
+        <div class="notice-col">
+          <img src="img/hiday1.jpg" alt="" />
+          <div class="layer">
+            <h3>HI-Day Tour</h3>
+          </div>
+        </div>
+        <div class="notice-col">
+          <img src="img/hiking.jpg" alt="" />
+          <div class="layer">
+            <h3>Mission Hiking</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- facilities -->
+
+    <section class="facilities">
+      <h1>SKKU Facilities</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+        at?
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="/img/international.jpg" alt="" />
+          <h3>International Office</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+            neque.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="/img/business.jpg" alt="" />
+          <h3>Business Building</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+            neque.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="/img/engineering.jpg" alt="" />
+          <h3>Engineering Building</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+            neque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+
+    <section class="testimonials">
+      <h1>Exchange Student Stories</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+        at?
+      </p>
+
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="/img/user(1).jpg" alt="" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum
+              dolorum, illo temporibus, earum minima iusto itaque, modi libero
+              praesentium magni dolores rem harum perspiciatis.
+            </p>
+            <h3>Christine Berkley</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <img src="/img/user(2).jpg" alt="" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum
+              dolorum, illo temporibus, earum minima iusto itaque, modi libero
+              praesentium magni dolores rem harum perspiciatis.
+            </p>
+            <h3>David Byer</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+
+    <section class="cta">
+      <h1>
+        Sign up for <br />
+        HI-Club Buddy Program!
+      </h1>
+      <a ref="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a,
+        dolores nesciunt obcaecati tenetur ratione rerum sapiente <br />
+        eius quasi, ex, omnis fuga adipisci aliquid. Veniam.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with Easy Tutorials by Jinhee Kim, SKKU HI-Club</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
+{% endblock content %}
