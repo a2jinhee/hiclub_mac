@@ -28,22 +28,7 @@
   </head>
   <body>
     <section class="header">
-      <nav>
-        <a href="index.html"
-          ><img src="{%static 'img/logo.jpg'%}" width="=100" height="50" alt=""
-        /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="{% url 'homepage' %}">HOME</a></li>
-            <li><a href="{% url 'about' %}">ABOUT</a></li>
-            <li><a href="{% url 'info' %}">INFO</a></li>
-            <li><a href="{% url 'notice' %}">NOTICE</a></li>
-            <li><a href="{% url 'contact' %}">CONTACT</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
+      {% include 'navbar.html' %}
 
       <div class="text-box">
         <h1>The Global Leader, SKKU</h1>
@@ -213,22 +198,7 @@
     </section>
 
     <!-- Footer -->
-
-    <section class="footer">
-      <h4>About us</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a,
-        dolores nesciunt obcaecati tenetur ratione rerum sapiente <br />
-        eius quasi, ex, omnis fuga adipisci aliquid. Veniam.
-      </p>
-      <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
-      <p>Made with Easy Tutorials by Jinhee Kim, SKKU HI-Club</p>
-    </section>
+    {% include 'footer.html' %}
 
     <!-- JavaScript for Toggle Menu -->
     <script>
