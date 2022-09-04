@@ -30,6 +30,10 @@ def notice(request):
     return render(request, 'blog.html')
 
 
+def contact(request):
+    return render(request, 'contact.html')
+
+
 def post(request, slug):
     post = Post.objects.get(slug=slug)
     context = {
@@ -67,7 +71,3 @@ def search(request):
         'queryset': queryset
     }
     return render(request, 'search_bar.html', context)
-
-
-def contact(request):
-    return render(request, 'contact.html')
