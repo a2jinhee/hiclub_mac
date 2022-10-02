@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from django.conf import settings
-from base.views import homepage, post, about, category_post_list, allposts, search, contact, info, notice
+from base.views import homepage, post, about, category_post_list, allposts, search, contact, facilities, lifestyle, notice
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -31,7 +31,8 @@ urlpatterns = [
     path('posts/', allposts, name='allposts'),
     path('search/', search, name='search'),
     path('contact/', contact, name='contact'),
-    path('info/', info, name='info'),
+    path('facilities/', facilities, name='facilities'),
+    path('lifestyle/', lifestyle, name='lifestyle'),
     path('notice/', notice, name='notice'),
 ]
 

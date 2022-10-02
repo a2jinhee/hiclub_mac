@@ -11,27 +11,52 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <!-- header  -->
-
     <section class="sub-header">
+
       {% include 'navbar.html' %}
-      <h1>About Us</h1>
+
+      <h1>SKKU FACILITIES</h1>
+
     </section>
-    <!-- about us content -->
-    <section class="about-us">
+
+    <!-- Facilities -->
+
+    <section class="info">
+      
+      <h1>SKKU Facilities</h1>
+      
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+        at?
+      </p>
+
       <div class="row">
-        <div class="about-col">
-          <h1>This is HI-Club from SKKU!</h1>
+        <div class="facilities-col">
+          <img src="{% static '/img/international.jpg'%}" alt="" />
+          <h3>International Office</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab
-            laboriosam praesentium ducimus voluptatem, sint corporis voluptas
-            adipisci, dolorum esse facilis quos debitis, iusto cumque.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+            neque.
           </p>
-          <a href="" , class="hero-btn red-btn">EXPLORE NOW</a>
         </div>
-        <div class="about-col">
-          <img src="{% static '/img/about.png'%}" alt="" />
+        <div class="facilities-col">
+          <img src="{% static '/img/business.jpg'%}" alt="" />
+          <h3>Business Building</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+            neque.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="{% static '/img/engineering.jpg'%}" alt="" />
+          <h3>Engineering Building</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+            neque.
+          </p>
         </div>
       </div>
     </section>
@@ -52,4 +77,4 @@
     </script>
   </body>
 </html>
-{% endblock content %}
+{%endblock content%}

@@ -22,8 +22,12 @@ def about(request):
     return render(request, 'about.html')
 
 
-def info(request):
-    return render(request, 'info.html')
+def facilities(request):
+    return render(request, 'facilities.html')
+
+
+def lifestyle(request):
+    return render(request, 'lifestyle.html')
 
 
 def notice(request):
